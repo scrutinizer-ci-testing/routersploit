@@ -3,7 +3,7 @@ build:
         node: '5.1.0'
     tests:
         before:
-            - pip3 install pylint
+            - pip install pylint
         override: 
             -
               command: 'pylint  ./libs  --output-format=parseable  --reports=n --include-naming-hint=y | tee pylint-data'
