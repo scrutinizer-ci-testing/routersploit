@@ -6,7 +6,7 @@ build:
             - pip install pylint
         override: 
             -
-              command: 'pylint  ./  --output-format=parseable  --reports=n --include-naming-hint=y | tee pylint-data'
+              command: 'pylint  ./routersploit  --output-format=parseable  --reports=n --include-naming-hint=y | tee pylint-data'
               analysis:
                 file: 'pylint-data'
                 format: 'pylint-parseable'
